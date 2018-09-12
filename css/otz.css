@@ -4,14 +4,13 @@
 }
 .photos img {
   align-self: center;
-  max-height: 468px;
-  max-width: 100%;
+  max-height: 468px;  
   margin: 50px auto;
 }
 @media screen and (max-width: 700px) {
-  /* .photos img {
+  .photos img {
     min-height: 122px;
-  } */
+  } 
 }
 .photos video {
   margin: 50px auto;
