@@ -40,6 +40,14 @@ h2 {
     background-color: #1f000991;
     border-radius: 5px;
 }
+.onmobile {
+    display: none;
+    align-self: center;
+}
+.ondesktop {
+    display: flex;
+    align-self: center;
+}
 
 .textinhat {
     font-family: 'Gilroy Bold';
@@ -252,7 +260,7 @@ h2 {
 
     .barhat img {
         width: 200px;
-    }
+    }    
 }
 
 /* Гарантии */
@@ -595,11 +603,73 @@ ul.submenui li a:hover i.fa-instagram::after {
         align-items: center;
     }
 }
+footer form input, footer textarea, footer button {
+    margin: 15px auto;                
+}
 
 @media screen and (max-width: 400px) {
-    footer form input, footer textarea, footer button {
-        max-width: 98%;
-        margin-left: 3px;
-        margin-right: 0;
+    
+    .arrow-right {
+        display: none;
+    }
+    .ohl {
+        margin-bottom: 25px;
+    }
+    .btn-ma {
+        margin:auto;
+    }
+    #slider {
+        height: 1250px;
+    }
+    #slides {
+        height: 783px;
+    }
+    .slide_dva {
+        width: 82%;
+    }
+    .slide_dva img {        
+        max-width: 81vw!important;
+        margin-left: -3vw;
+    }
+    .slide_dva h3 {
+        font-size: 21px!important;
+    }
+    .nextSlide {
+        right: 10px!important;
+    }
+    .prevSlide {
+        left: 10px!important;
+    }
+    #slider_dva {
+        min-height: 802px;
+    }
+    .comments {
+        padding-top: 1rem!important;
+    }
+    .onmobile {
+        display: block;
+    }
+    .ondesktop {
+        display: none;        
+    }
+    .photos video {
+        width: 100%;
+    }
+    footer form {
+        margin: 25px auto;
+    }
+
+}
+@media screen and (min-width: 400px) {
+    .desktop-float-right {
+        float:right;
+    }
+    .desk-padd {
+        padding: 3rem;
+    }        
+}
+@media (min-width: 554px) and (max-width: 2200px) {
+    .first-screen {
+        padding-left: 62px;
     }
 }

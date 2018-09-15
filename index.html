@@ -72,7 +72,7 @@
    <!-- the first screen-->
    	<header class="barhat">
    		<div class="overlay"></div>
-   		<div class="container">
+   		<div class="container first-screen">
             <div class="row">
             	<div class="col-md-7 text-white mt-5">
             		<h1>ВЫВЕДИ СВОЙ БИЗНЕС НА НОВЫЙ УРОВЕНЬ ВМЕСТЕ С SMMUPLEVEL</h1>
@@ -80,7 +80,7 @@
             		<p class="my-5">ПОМОЖЕМ ПРИВЕСТИ НОВЫХ КЛИЕНТОВ С ПОМОЩЬЮ ВАШЕГО АККАУНТА В ИНСТАГРАМ</p>
             	</div>
             	<div class="col-md-4">
-            		<div class="containeri float-right">
+            		<div class="containeri desktop-float-right">
 					  <ul class="submenui">
 					    <li><a target="_blank" href="https://vk.com/smmuplevel"><i class="fa fa-vk"></i></a></li>
 					    <li><a target="_blank" href="https://www.instagram.com/smmuplevel/"><i class="fa fa-instagram"></i></a></li>
@@ -125,13 +125,17 @@
 			</div>
 			<div class="col-md-4 text-center diagram">
 				<div id="donut_single"></div>
-				<h3>70% пользователей</h3>
-				<p>смотрят страницы брендов</p>
+				<div>
+					<h3>70% пользователей</h3>
+					<p>смотрят страницы брендов</p>
+				</div>
 			</div>
 			<div class="col-md-4 text-center diagram">
 				<div id="donut_single2"></div>
-				<h3>37%</h3>
-				<p>пользователей подписаны на 1-5 коммерческих аккаунтов</p>
+				<div>
+					<h3>37%</h3>
+					<p>пользователей подписаны на 1-5 коммерческих аккаунтов</p>	
+				</div>				
 			</div>
 			<div class="col-md-4 col-12 col-sm-12 text-center">
 				<h3>21 минуту в день</h3>
@@ -148,8 +152,10 @@
 			</div>
 			<div class="col-md-4 text-center diagram">
 				<div id="chart_norm"></div>
-				<h3>5000 руб</h3>
-				<p>средний чек со всех продаж в Инстаграм</p>
+				<div>
+					<h3>5000 руб</h3>
+					<p>средний чек со всех продаж в Инстаграм</p>	
+				</div>				
 			</div>
 			<div style="align-self: center;" class="col-md-12 col-12 col-sm-12 text-center">
 				<p class="fz-middle my-3">400 000 000 активных пользователей в день</p>
@@ -300,7 +306,7 @@
             		<p class="fz-small">У нас в гостях Иван Охлобыстин!</p>
             		<img class="arrow-right" src="img/arrows2.svg" alt="arrow">
             	</div>
-            	<div class="col-md-4">
+            	<div class="col-md-4 ohl">
             		<img src="img/portfolio/3.jpeg" alt="Охлобыстин">
             	</div>
 	            <div style="align-self: center;" class="col-md-4">
@@ -784,8 +790,8 @@
                             <div class="col-12 col-md-9 mb-2 mb-md-0">
                                 <input name="tel" type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
                             </div>
-                            <div class="col-5 col-md-3">
-                                <button type="submit" class="btn btn-block btn-lg btn-red btn-width">Хочу заявки!</button>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-block btn-lg btn-red btn-width btn-ma">Хочу заявки!</button>
                             </div>
                         </div>
                     </form>
@@ -969,17 +975,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="photos">
-                        <div class="img">
-                            <img src="img/review/eng.png">
+                        <div class="img">                        	
+                        	<img class="onmobile" src="img/review/2.jpg">
+                            <img class="ondesktop" src="img/review/eng.png">
                           </div>
                         <div class="img0">
-                        	<img src="img/review/cofe.png">
+                        	<img class="onmobile" src="img/review/1.jpg">
+                        	<img class="ondesktop" src="img/review/cofe.png">
                           </div>
-                        <div class="img1">
+                        <div class="img1">                        	
                             <img src="img/review/beauty_hb.jpg">
                           </div>
                         <div class="img2">
-                            <img src="img/review/ropes.png">
+                        	<img class="onmobile" src="img/review/3.jpg">
+                            <img class="ondesktop" src="img/review/ropes.png">
                         </div>
                         <div class="img3">
                             <video width="400" height="300" controls="controls" poster="img/review/otz1.jpg">
@@ -1011,8 +1020,8 @@
                             <div class="col-12 col-md-9 mb-2 mb-md-0">
                                 <input name="tel" type="tel" class="form-control form-control-lg" placeholder="Телефон" required>
                             </div>
-                            <div class="col-5 col-md-3">
-                                <button type="submit" class="btn btn-block btn-lg btn-red btn-width">Хочу разбор!</button>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-block btn-lg btn-red btn-width btn-ma">Хочу разбор!</button>
                             </div>
                         </div>
                     </form>
@@ -1028,7 +1037,7 @@
             <div class="row">
             </div>
         </div>
-        <div class="container p-5 text-white">
+        <div class="container text-white desk-padd">
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Контакты:</h2>
