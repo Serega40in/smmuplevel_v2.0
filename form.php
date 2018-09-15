@@ -40,7 +40,7 @@ $msg=iconv('utf-8', 'cp1251', $msg);
 $zag=iconv('utf-8', 'cp1251', $zag);
 
 
-mail("serega40-in@yandex.ru", "$zag", "$msg", "Content-type: text/html; charset=windows-1251\r\n\r\n");
+mail("info@smmuplevel.ru", "$zag", "$msg", "Content-type: text/html; charset=windows-1251\r\n\r\n");
 
 // Âûâîäèì ñîîáùåíèå ïîëüçîâàòåëþ 
 
