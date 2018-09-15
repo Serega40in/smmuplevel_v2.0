@@ -1,0 +1,29 @@
+.features-icons {
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  .features-icons-item {
+    max-width: 20rem;
+    .features-icons-icon {
+      height: 7rem;
+      i {
+        font-size: 4.5rem;
+      }
+    }
+    &:hover {
+      .features-icons-icon {
+        i {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+  h2 {
+      margin-bottom: 4rem;
+
+  }
+
+  h4 {
+      margin-top: 4rem;
+      font-weight: bold;
+  }
+}

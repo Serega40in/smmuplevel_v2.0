@@ -7,7 +7,7 @@
 .slide img{width:250px;}
 @media screen and (max-width:996px){.slide img{width:190px;}
 }
-@media screen and (max-width:768px){#slider{height:930px;}
+@media screen and (max-width:768px){#slider{height:1112px;}
 #slides{height:720px;text-align:center;}
 .slide{font-size:1em;}
 .slide p{font-size:1.2em;}
