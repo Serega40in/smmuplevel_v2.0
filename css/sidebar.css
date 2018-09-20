@@ -39,7 +39,7 @@
     top: 0;
     left: 0;
     height: 120%;
-    z-index: 999;    
+    z-index: 999999;    
     background-image: url(../img/bg/2.jpg);
     background-size: cover;
     color: #fff;
@@ -155,11 +155,12 @@ a.article:hover {
     #content {
         width: 100%;
     }
-    #content.active {
+    /*#content.active {
         width: calc(100% - 250px);
-    }
-    #sidebarCollapse span {
-        /*display: none;*/
+    }*/
+    #sidebarCollapse.active {
+        /*display: none;*/               
+        left: 250px;
     }
 }
 

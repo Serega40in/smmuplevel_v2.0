@@ -31,7 +31,9 @@ h2 {
     font-size: 2.3rem;
     line-height: 3rem;
 }
-
+.prior {
+    z-index: 10;
+}
 .bg-light {
     background-color: #abd2f924 !important;
 }
@@ -75,7 +77,9 @@ h2 {
     z-index: 999;
     background: #fff;
 }
-
+.w-100 {
+    width: 100%;
+}
 .question button p {
     font-weight: bold;
 }
@@ -201,6 +205,7 @@ h2 {
     background: linear-gradient(118deg, #a81e25 0%, #450606 125%);
     padding: 10px 10px 15px;
     margin: 5px;
+    border: none;
 }
 
 .fz-middle {
@@ -539,7 +544,7 @@ ul.submenui li a:hover i.fa-instagram::after {
 }
 
 #popup_yes, #popup_no, #popup_try {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -577,14 +582,27 @@ ul.submenui li a:hover i.fa-instagram::after {
     flex-direction: column;
 }
 
+@media (min-width: 400px) and (max-width: 1125px) {
+    .planshet-none {
+        display: none;
+    }
+}
+@media (min-width: 400px) and (max-width: 1010px) {    
+    .prior {
+        background: rgba(0,0,0,0.5);
+        margin-bottom: 15px;
+    }
+    .prior button {
+        margin:10px auto;
+    }
+}
 @media screen and (max-width: 768px) {
     h1 {
         margin-top: 2rem;
     }
 
     .display-4 {
-        margin-top: 2rem;
-        border-top: solid;
+        margin-top: 2rem;        
         padding-top: 2rem;
     }
 
@@ -607,8 +625,34 @@ footer form input, footer textarea, footer button {
     margin: 15px auto;                
 }
 
-@media screen and (max-width: 400px) {
-    
+@media screen and (max-width: 400px) {    
+    .border-top {
+        border-top:1px solid!important;
+    }
+    .display-4 {
+        margin-top: 0rem!important;
+        padding-top: 0rem!important;
+    }
+    .tariff {
+        padding-top:3rem!important;
+    }
+    .mb-5 {
+        margin-bottom: 15px!important;
+    }
+    .pt-5 {
+        padding-top: 5px!important;     
+    }
+    .py-5 {
+        padding-top: 25px!important;     
+        padding-bottom: 15px!important;
+    }
+    h2.my-5 {
+        margin-top: 5px!important;     
+        margin-bottom: 5px!important;        
+    }
+    .testimonials {
+        padding-bottom: 2rem!important;
+    }
     .arrow-right {
         display: none;
     }
@@ -617,9 +661,6 @@ footer form input, footer textarea, footer button {
     }
     .btn-ma {
         margin:auto;
-    }
-    #slider {
-        height: 1250px;
     }
     #slides {
         height: 783px;
@@ -635,13 +676,14 @@ footer form input, footer textarea, footer button {
         font-size: 21px!important;
     }
     .nextSlide {
-        right: 10px!important;
+        right: 0px!important;
     }
     .prevSlide {
-        left: 10px!important;
+        left: 0px!important;
     }
     #slider_dva {
-        min-height: 802px;
+        min-height: 650px;
+        margin-top: 0px!important;
     }
     .comments {
         padding-top: 1rem!important;
@@ -658,7 +700,19 @@ footer form input, footer textarea, footer button {
     footer form {
         margin: 25px auto;
     }
-
+    #proj {
+        margin: 25px auto!important;
+    }
+    .mob-otst {
+        margin: 25px auto!important;
+        padding:0!important;
+    }
+    .comments {
+        padding-bottom: 4rem!important;
+    }
+    footer.footer {
+    padding-top: 1rem!important;
+    }
 }
 @media screen and (min-width: 400px) {
     .desktop-float-right {
@@ -671,5 +725,8 @@ footer form input, footer textarea, footer button {
 @media (min-width: 554px) and (max-width: 2200px) {
     .first-screen {
         padding-left: 62px;
+    }
+    .desk-otst {
+        margin-top: 25px;
     }
 }
